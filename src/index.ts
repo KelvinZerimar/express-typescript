@@ -6,7 +6,7 @@ app.use(express.json())// middleware que transforma la req.body a un json
 const PORT = 3000
 
 app.get('/ping',(_req,res)=>{ // typescript ignora errores parametros con guión bajo
-    console.log('someone pinged here!!');
+    console.log('someone pinged here!!' + new Date().toLocaleDateString());
     res.send('pong');
 });
 
