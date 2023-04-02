@@ -6,6 +6,7 @@
 -- inicializamos nuestro proyecto
 
 > npm run tsc -- --init
+> "tsc": "tsc", --> package.json
 
 -- modificar tsconfig.json
 
@@ -14,6 +15,18 @@
     "noUnusedParameters": true,    
     "noImplicitReturns": true, 
     "noFallthroughCasesInSwitch": true,  
-    
 
+-- Instalar dependencias necesarias
+    > npm i express -E --> version exacta
 
+    Al import 'express' paquetes que aun no tiene tipos
+    REF: web DefinitelyTyped
+    > npm i @types/express -D
+
+-- generamos js a partir de typescript
+    > npm run tsc --> en la carpeta buil 'previamente configurada' crea el fichero js compilado de todo el typescript
+
+--> ejecutamos nuetra app
+    > node build/index.js
+    > npm run
+    > npm start
