@@ -1,0 +1,19 @@
+-- Crear proyecto
+
+> npm init -y
+> npm i typescript -D
+
+-- inicializamos nuestro proyecto
+
+> npm run tsc -- --init
+
+-- modificar tsconfig.json
+
+    "outDir": "./build", 
+    "noUnusedLocals": true,  
+    "noUnusedParameters": true,    
+    "noImplicitReturns": true, 
+    "noFallthroughCasesInSwitch": true,  
+    
+
+
