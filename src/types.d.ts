@@ -1,3 +1,5 @@
+import diaryEntries from "./services/diaries"
+
 export type Weather = 'sunny'|'rainy'|'cloudy'|'windy'|'stormy'
 export type Visibility = 'great'|'good'|'ok'|'poor'
 
@@ -8,3 +10,7 @@ export interface DiaryEntry{
     visibility: Visibility,
     comment: string
 }
+
+// export type NonSensitiveInfoDiaryEntry = Pick<diaryEntries, 'id'|'date'|'weather'|'visibility'>
+
+export type NonSensitiveInfoDiaryEntry = Omit<DiaryEntry, 'comment'>
