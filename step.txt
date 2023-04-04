@@ -23,10 +23,10 @@
     REF: web DefinitelyTyped
     > npm i @types/express -D
 
--- generamos js a partir de typescript
+-- Generamos js a partir de typescript
     > npm run tsc --> en la carpeta buil 'previamente configurada' crea el fichero js compilado de todo el typescript
 
--- ejecutamos nuetra app
+-- Ejecutamos nuestra app
     > node build/index.js
     > npm run
     > npm start
@@ -34,3 +34,9 @@
 -- Para compilar automaticamente
     > npm i ts-node-dev -D
     > npm run dev
+
+-- 
+    > npm install ts-standard -D
+    > npm run listen
+
+-- 
